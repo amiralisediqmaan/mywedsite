@@ -1,65 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سایت حرفه‌ای امیرعلی</title>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="D1">
-            <h1>امیرعلی صدیق معان هستم چاکر شما</h1>
-            <p>ایت سایت زیبا متعلق به امیرعلی صدیق معان است</p>
-        </div>
-    </header>
-    <nav>
-            <ul>
-                <li><a href="#خانه">خانه</a></li>
-                <li><a href="#خدمات">خدمات</a></li>
-                <li><a href="">در باره ما</a></li>
-                <li><a href="">تماس با ما</a></li>
-            </ul>
-        </nav>
-        <section id="خانه">
-                <div class="D2">
-                    <h2>این سایتی که الان درونش هستید متعلق به امیرعلی صدیق معان است و او یک فرد بسیار موفق در حوزه برنامه نویسی تحت وب است.</h2>
-                    <p class="P1">همانطور که عرض کردم این ساین برای سلطان سلطان ها امیرعلی صدیق معان هستش و او خیلی مشتاق است برای یادگیری چیز های چدید.❤
-                </div>
-            </section>
-            <br><br><br><br><br><br><br>
-        <main>
-            <section id="خدمات">
-                <div class="D3">
-                    <h2>خدمات</h2>
-                    <p>ما آموزش‌های مقدماتی طراحی وب را ارائه می‌دهیم، شامل HTML، CSS و اصول طراحی ریسپانسیو.</p>
-                    <img src="gg.png" alt="">
-                </div>
-                <br><br><br>
-                <div class="D3">
-                    <h2>درباره ما</h2>
-                    <p>این یک سایت ساده برای آموزش HTML و CSS است. هدف این سایت ارائه یک ساختار درست و قابل فهم برای مبتدی‌ها است.</p>
-                    <br>
-                    <a href="" class="A1">کلیک کنید</a>
-                </div>
-            </section>
-        </main>
-        <section class="S1">
-            <div class="D4">
-                <h2>تماس با ما</h2>
-                <form>
-                    <input type="text" required placeholder="نام خود را وارد کنید.">
-                    <input type="email" required placeholder="ایمیل خود را وارد نمایید.">
-                    <textarea name="" id="" required placeholder="پیام خود را وارد کنید."></textarea>
-                    <button type="submit" class="button">ارسال</button>
-                </form>
-            </div>
-        </section>
+  <button class="toggle-dark" onclick="toggleDarkMode()">حالت شب</button>
+  <header>
+    <h1>به سایت حرفه‌ای امیرعلی خوش آمدید</h1>
+  </header>
 
-        <footer>
-            <div class="D5">
-                <h4>تمامی حقوق برای امیرعلی صدیق معان محفوض است.&copy;</h4>
-            </div>
-        </footer>
+  <nav>
+    <a href="#about">درباره ما</a>
+    <a href="#services">خدمات</a>
+    <a href="#gallery">گالری</a>
+    <a href="#contact">تماس با ما</a>
+  </nav>
+
+  <div class="hero">
+    <h2>طراحی زیبا، تجربه کاربری روان، و سبک منحصر‌به‌فرد</h2>
+    <p>با ما همراه باشید برای یک تجربه وب عالی</p>
+  </div>
+
+  <section class="section" id="about">
+    <h2>درباره ما</h2>
+    <p>
+      ما یک تیم متخصص در زمینه طراحی و توسعه وب هستیم که با هدف ارائه خدمات با کیفیت و مطابق با استانداردهای روز دنیا فعالیت می‌کنیم. رسالت ما ساخت سایت‌هایی است که هم زیبا و هم کاربردی باشند.
+    </p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>خدمات ما</h2>
+    <ul>
+      <li>طراحی سایت ریسپانسیو</li>
+      <li>سئو و بهینه‌سازی</li>
+      <li>طراحی رابط کاربری</li>
+      <li>پشتیبانی و نگهداری</li>
+    </ul>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>گالری تصاویر</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/random/300x200?web" alt="نمونه ۱">
+      <img src="https://source.unsplash.com/random/301x200?design" alt="نمونه ۲">
+      <img src="https://source.unsplash.com/random/302x200?technology" alt="نمونه ۳">
+      <img src="https://source.unsplash.com/random/303x200?code" alt="نمونه ۴">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>فرم تماس با ما</h2>
+    <form>
+      <input type="text" placeholder="نام شما" required>
+      <input type="email" placeholder="ایمیل شما" required>
+      <textarea placeholder="پیام شما" rows="5"></textarea>
+      <button type="submit">ارسال</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>تمامی حقوق این سایت متعلق به امیرعلی است © 2025</p>
+  </footer>
+
+  
 </body>
 </html>
