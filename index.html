@@ -1,71 +1,67 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سایت حرفه‌ای امیرعلی</title>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button class="toggle-dark" onclick="toggleDarkMode()">حالت شب</button>
-  <header>
-    <h1>به سایت حرفه‌ای امیرعلی خوش آمدید</h1>
-  </header>
+    <header>
+        <div class="D1">
+            <h1 id="Home">به سایت حرفه ای امیرعلی خوش آمدید!💯</h1>
+        </div>
+        <div class="D2">
+            <nav>
+                <ul>
+                    <li><a href="#درباره ما">درباره ما</a></li>
+                    <li><a href="#خدمات">خدمات</a></li>
+                    <li><a href="#تماس با ما">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="D3">
+            <h2>طراحی زیبا، تجربه کاربری روان، و سبک منحصر‌به‌فرد</h2>
+            <p>با ما همراه باشید برای یک تجربه وب عالی🔥</p>
+        </div>
+    </header>
 
-  <nav>
-    <a href="#about">درباره ما</a>
-    <a href="#services">خدمات</a>
-    <a href="#gallery">گالری</a>
-    <a href="#contact">تماس با ما</a>
-  </nav>
+    <main>
+        <section id="درباره ما">
+            <div class="D4">
+                <h1 class="H1">درباره ما</h1>
+                <p class="P1">ما یک تیم متخصص در زمینه طراحی و توسعه وب هستیم که با هدف ارائه خدمات با کیفیت و مطابق با استانداردهای روز دنیا فعالیت می‌کنیم. رسالت ما ساخت سایت‌هایی است که هم زیبا و هم کاربردی باشند.🌈</p>
+            </div>
+        </section>
+        <section id="خدمات">
+            <div class="D4">
+                <h1 class="H1">خدمات</h1>
+                <ul class="U1">
+                    <li>طراحی ریسپانسیو ✡</li>
+                    <li>سئو و بهینه سازی ※</li>
+                    <li>طراحی رابط کاربری 💌</li>
+                    <li>پشتیبانی و نگهداری 🔊</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-  <div class="hero">
-    <h2>طراحی زیبا، تجربه کاربری روان، و سبک منحصر‌به‌فرد</h2>
-    <p>با ما همراه باشید برای یک تجربه وب عالی</p>
-  </div>
+    <section id="تماس با ما">
+        <div class="D7">
+            <h1>تماس با ما</h1>
+            <form>
+                <input type="text" required placeholder="نام خود را وارد کنید.">
+                <input type="email" required placeholder="ایمیل خود را وارد کنید.">
+                <textarea required placeholder="پیام خود را وارد کنید."></textarea>
+                <button>ارسال کنید</button>
+            </form>
+        </div>
+    </section>
 
-  <section class="section" id="about">
-    <h2>درباره ما</h2>
-    <p>
-      ما یک تیم متخصص در زمینه طراحی و توسعه وب هستیم که با هدف ارائه خدمات با کیفیت و مطابق با استانداردهای روز دنیا فعالیت می‌کنیم. رسالت ما ساخت سایت‌هایی است که هم زیبا و هم کاربردی باشند.
-    </p>
-  </section>
-
-  <section class="section" id="services">
-    <h2>خدمات ما</h2>
-    <ul>
-      <li>طراحی سایت ریسپانسیو</li>
-      <li>سئو و بهینه‌سازی</li>
-      <li>طراحی رابط کاربری</li>
-      <li>پشتیبانی و نگهداری</li>
-    </ul>
-  </section>
-
-  <section class="section" id="gallery">
-    <h2>گالری تصاویر</h2>
-    <div class="gallery">
-      <img src="https://source.unsplash.com/random/300x200?web" alt="نمونه ۱">
-      <img src="https://source.unsplash.com/random/301x200?design" alt="نمونه ۲">
-      <img src="https://source.unsplash.com/random/302x200?technology" alt="نمونه ۳">
-      <img src="https://source.unsplash.com/random/303x200?code" alt="نمونه ۴">
-    </div>
-  </section>
-
-  <section class="section" id="contact">
-    <h2>فرم تماس با ما</h2>
-    <form>
-      <input type="text" placeholder="نام شما" required>
-      <input type="email" placeholder="ایمیل شما" required>
-      <textarea placeholder="پیام شما" rows="5"></textarea>
-      <button type="submit">ارسال</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>تمامی حقوق این سایت متعلق به امیرعلی است © 2025</p>
-  </footer>
-
-  
+    <footer>
+        <div class="D8">
+            <h1>تمامی حقوق این سایت متعلق به امیرعلی است © 2025 &nbsp; &nbsp;<a href="#Home">↑</a></h1>
+        </div>
+    </footer>
 </body>
 </html>

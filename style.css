@@ -1,157 +1,204 @@
-/* فایل style.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Vazirmatn', sans-serif;
-  direction: rtl;
+@font-face {
+    font-family: Amirali;
+    src: url(IRKamran_YasDL.com.ttf);
 }
 
-body {
-  background-color: #f9f9f9;
-  color: #222;
-  line-height: 1.8;
-  transition: background-color 0.4s, color 0.4s;
+*{
+
+    font-family: Amirali;
+    line-height: 1.4;
+    scroll-behavior: smooth;
 }
 
-body.dark-mode {
-  background-color: #1e1e1e;
-  color: #eee;
+body{
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    direction: rtl;
 }
 
-header {
-  background-color: #2c3e50;
-  color: white;
-  padding: 20px;
-  text-align: center;
+header{
+
+    background-color: lightgrey;
+    text-align: center;
+    padding: 0;
 }
 
-nav {
-  background-color: #34495e;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+.D1{
+
+    font-size: 20px;
+    background-color: #0a3d62;
+    padding: 1px;
+    color: white;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-  transition: background 0.3s, transform 0.3s;
+.D2{
+
+    background-color: #3c6382;
+    padding: 1px;
 }
 
-nav a:hover {
-  background-color: #1abc9c;
-  border-radius: 5px;
-  transform: scale(1.1);
+nav ul{
+
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.hero {
-  background: linear-gradient(to right, #1abc9c, #16a085);
-  color: white;
-  padding: 100px 20px;
-  text-align: center;
-  animation: fadeIn 1s ease-in;
+li a{
+
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;  
 }
 
-.section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-  animation: slideUp 0.7s ease-in-out;
+li a:hover{
+
+    background-color: #079992;
+    transition: all 0.6s;
+    border-radius: 7px;
+    transform: scale(1.1);
+    width: 5px;
+    margin: 5px;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
+.D3{
+
+    background-color: #38ada9;
+    padding: 70px;
+    font-size: 30px;
+    color: white; 
 }
 
-.gallery img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s;
+main{
+
+    background-color: white;
+    width: 1100px;
+    padding: 0;
+    margin: 0;
 }
 
-.gallery img:hover {
-  transform: scale(1.05);
+.D4{
+
+    margin-right: 130px;
+    margin-top: 150px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.H1{
+
+    font-size: 40px;
 }
 
-form input,
-form textarea,
-form button {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  transition: all 0.3s;
+.P1{
+
+    font-size: 25px;
+    
 }
 
-form input:focus,
-form textarea:focus {
-  border-color: #1abc9c;
-  outline: none;
+.U1 li{
+
+    font-size: 25px;
 }
 
-form button {
-  background-color: #1abc9c;
-  color: white;
-  cursor: pointer;
+form{
+
+    justify-content: center;
+    display: flex;
 }
 
-form button:hover {
-  background-color: #16a085;
+.D7{
+
+    text-align: center;
+    padding: 80;
 }
 
-footer {
-  background-color: #2c3e50;
-  color: white;
-  text-align: center;
-  padding: 30px;
-  margin-top: 40px;
+.D7 h1{
+
+    font-size: 45px;
+    margin-bottom: 40px;
 }
 
-.toggle-dark {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background: #1abc9c;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-  z-index: 999;
+.D7 form{
+
+    max-width: 500;
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+    flex-direction: column;
+    margin: 0 auto;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.D7 input,
+.D7 textarea{
+
+    padding: 15px;
+    border-radius: 10px;
+    resize: none;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #ced6e0;
+}
+
+button{
+
+    border: none;
+    background-color: #3c6382;
+    color: white;
+    font-weight: 700px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+button:hover{
+
+    background-color: #0a3d62;
+    transition: all 1.4s;
+}
+
+.D8{
+
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 90px;
+}
+
+.D8 h1 a{
+
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.D8 h1 a:hover{
+
+    color: aqua;
+}
+
+@keyframes fedeIn {
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+    form{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
